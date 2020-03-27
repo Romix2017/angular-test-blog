@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="angular-basics\**" />
+    <Compile Remove="my-project\**" />
+    <Content Remove="angular-basics\**" />
+    <Content Remove="my-project\**" />
+    <EmbeddedResource Remove="angular-basics\**" />
+    <EmbeddedResource Remove="my-project\**" />
+    <None Remove="angular-basics\**" />
+    <None Remove="my-project\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="angular-blog\src\app\admin\admin.module.ts" />
+    <None Remove="angular-blog\src\app\admin\shared\search.pipe.ts" />
+    <None Remove="angular-blog\src\app\admin\shared\services\alert.service.ts" />
+    <None Remove="angular-blog\src\app\admin\shared\services\auth.guard.ts" />
+    <None Remove="angular-blog\src\app\admin\shared\services\auth.service.ts" />
+    <None Remove="angular-blog\src\app\admin\shared\shared.module.ts" />
+    <None Remove="angular-blog\src\app\shared\auth.interceptor.ts" />
+    <None Remove="angular-blog\src\app\shared\components\interfaces.ts" />
+    <None Remove="angular-blog\src\app\shared\posts.service.ts" />
+    <None Remove="angular-blog\src\environments\interface.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="angular-blog\src\app\admin\admin.module.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\admin\shared\search.pipe.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\admin\shared\services\alert.service.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\admin\shared\services\auth.guard.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\admin\shared\services\auth.service.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\admin\shared\shared.module.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\shared\auth.interceptor.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\shared\components\interfaces.ts" />
+    <TypeScriptCompile Include="angular-blog\src\app\shared\posts.service.ts" />
+    <TypeScriptCompile Include="angular-blog\src\environments\interface.ts" />
+  </ItemGroup>
+
+</Project>
